@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+	font-family: "Arial";
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	background-color: #f1da03;
+	margin: 10px;
+}
+
+ul {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1200px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.header-body {
+	background-color: #07119c;
+	color: #1dce06;
+	border-radius: 5px;
+	border: 1px solid #000;
+	text-align: center;
+	padding: 15px;
+	margin: 0 0 40px 0;
+}
+
+.pokemon-list li {
+	text-align: center;
+	list-style-type: none;
+	padding: 5px;
+	width: 33.333%;
+}
+
+.list-button {
+	background-color: #561085;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	color: #fff;
+	border: #000 solid 1px;
+	cursor: pointer;
+}
+
+.list-button:hover {
+	background-color: #05055a;
+	-webkit-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+}
+
+.modal {
+	display: none;
+}
+
+
+.modal-visible {
+	background-color: #fff;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+	padding: 10px;
+	max-width: 500px;
+	height: auto;
+	width: 100%;
+	border: 1px solid #000;
+}
+
+.modal-visible img {
+	width: 100%;
+}
+
+.modal-close {
+	float: right;
+	-webkit-appearance: none;
+	border: 0;
+	background: none;
+	color: #777;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	border: 2px solid #777;
+	border-radius: 100%;
+	padding: 4px 10px;
+}
+
+.pokemon-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.img-div {
+	width: 50%;
+	margin: 0 5px 0 0;
+}
+
+.modal-details {
+	width: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.modal-details p {
+	text-align: left;
+	font-weight: 700;
+}
+
+.modal-details span {
+	font-weight: 400;
+}
+
+.overlay-visible {
+	position: fixed;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000080;
+	z-index: 999;
+	overflow: auto;
+	display: grid;
+	text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+	.pokemon-list li {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 630px) {
+	.pokemon-list li {
+		width: 100%;
+	}
+};
+ 
