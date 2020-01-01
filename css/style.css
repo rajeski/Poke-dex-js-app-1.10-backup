@@ -1,154 +1,155 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
-* {
-	font-family: "Arial";
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-
-}
-
-body {
-	background-color: #f1da03;
-	margin: 10px;
-}
-
-ul {
-	margin: 0 auto;
-	padding: 0 10px;
-	max-width: 1200px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-
-.header-body {
-	background-color: #07119c;
-	color: #1dce06;
-	border-radius: 5px;
-	border: 1px solid #000;
-	text-align: center;
-	padding: 15px;
-	margin: 0 0 40px 0;
-}
-
-.pokemon-list li {
-	text-align: center;
-	list-style-type: none;
-	padding: 5px;
-	width: 33.333%;
-}
-
-.list-button {
-	background-color: #561085;
-	width: 100%;
-	height: 50px;
-	border-radius: 5px;
-	color: #fff;
-	border: #000 solid 1px;
-	cursor: pointer;
-}
-
-.list-button:hover {
-	background-color: #05055a;
-	-webkit-transition: background-color 0.5s ease;
-	transition: background-color 0.5s ease;
-}
-
-.modal {
-	display: none;
-}
-
-
-.modal-visible {
-	background-color: #fff;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border-radius: 5px;
-	padding: 10px;
-	max-width: 500px;
-	height: auto;
-	width: 100%;
-	border: 1px solid #000;
-}
-
-.modal-visible img {
-	width: 100%;
-}
-
-.modal-close {
-	float: right;
-	-webkit-appearance: none;
-	border: 0;
-	background: none;
-	color: #777;
-	font-weight: 700;
-	cursor: pointer;
-	text-decoration: none;
-	border: 2px solid #777;
-	border-radius: 100%;
-	padding: 4px 10px;
-}
-
-.pokemon-info {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.img-div {
-	width: 50%;
-	margin: 0 5px 0 0;
-}
-
-.modal-details {
-	width: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.modal-details p {
-	text-align: left;
-	font-weight: 700;
-}
-
-.modal-details span {
-	font-weight: 400;
-}
-
-.overlay-visible {
-	position: fixed;
-	padding: 20px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #00000080;
-	z-index: 999;
-	overflow: auto;
-	display: grid;
-	text-align: center;
-}
-
-@media all and (max-width: 1024px) {
-	.pokemon-list li {
-		width: 50%;
-	}
-}
-
-@media all and (max-width: 630px) {
-	.pokemon-list li {
-		width: 100%;
-	}
-};
+<div>
+<div>@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap');</div>
+<br />
+<div>* {</div>
+<div>font-family: "Arial";</div>
+<div>-webkit-box-sizing: border-box;</div>
+<div>box-sizing: border-box;</div>
+<div>margin: 0;</div>
+<div>padding: 0;</div>
+<br />
+<div>}</div>
+<br />
+<div>body {</div>
+<div>background-color: #f1da03;</div>
+<div>margin: 10px;</div>
+<div>}</div>
+<br />
+<div>ul {</div>
+<div>margin: 0auto;</div>
+<div>padding: 010px;</div>
+<div>max-width: 1200px;</div>
+<div>display: -webkit-box;</div>
+<div>display: -ms-flexbox;</div>
+<div>display: flex;</div>
+<div>-ms-flex-wrap: wrap;</div>
+<div>flex-wrap: wrap;</div>
+<div>}</div>
+<br />
+<div>.header-body {</div>
+<div>background-color: #07119c;</div>
+<div>color: #1dce06;</div>
+<div>border-radius: 5px;</div>
+<div>border: 1pxsolid#000;</div>
+<div>text-align: center;</div>
+<div>padding: 15px;</div>
+<div>margin: 0040px0;</div>
+<div>}</div>
+<br />
+<div>.pokemon-list li {</div>
+<div>text-align: center;</div>
+<div>list-style-type: none;</div>
+<div>padding: 5px;</div>
+<div>width: 33.333%;</div>
+<div>}</div>
+<br />
+<div>.list-button {</div>
+<div>background-color: #561085;</div>
+<div>width: 100%;</div>
+<div>height: 50px;</div>
+<div>border-radius: 5px;</div>
+<div>color: #fff;</div>
+<div>border: #000solid1px;</div>
+<div>cursor: pointer;</div>
+<div>}</div>
+<br />
+<div>.list-button:hover {</div>
+<div>background-color: #05055a;</div>
+<div>-webkit-transition: background-color 0.5sease;</div>
+<div>transition: background-color 0.5sease;</div>
+<div>}</div>
+<br />
+<div>.modal {</div>
+<div>display: none;</div>
+<div>}</div>
+<br /><br />
+<div>.modal-visible {</div>
+<div>background-color: #fff;</div>
+<div>margin: auto;</div>
+<div>top: 0;</div>
+<div>right: 0;</div>
+<div>bottom: 0;</div>
+<div>left: 0;</div>
+<div>border-radius: 5px;</div>
+<div>padding: 10px;</div>
+<div>max-width: 500px;</div>
+<div>height: auto;</div>
+<div>width: 100%;</div>
+<div>border: 1pxsolid#000;</div>
+<div>}</div>
+<br />
+<div>.modal-visible img {</div>
+<div>width: 100%;</div>
+<div>}</div>
+<br />
+<div>.modal-close {</div>
+<div>float: right;</div>
+<div>-webkit-appearance: none;</div>
+<div>border: 0;</div>
+<div>background: none;</div>
+<div>color: #777;</div>
+<div>font-weight: 700;</div>
+<div>cursor: pointer;</div>
+<div>text-decoration: none;</div>
+<div>border: 2pxsolid#777;</div>
+<div>border-radius: 100%;</div>
+<div>padding: 4px10px;</div>
+<div>}</div>
+<br />
+<div>.pokemon-info {</div>
+<div>display: -webkit-box;</div>
+<div>display: -ms-flexbox;</div>
+<div>display: flex;</div>
+<div>}</div>
+<br />
+<div>.img-div {</div>
+<div>width: 50%;</div>
+<div>margin: 05px00;</div>
+<div>}</div>
+<br />
+<div>.modal-details {</div>
+<div>width: 50%;</div>
+<div>margin: 0;</div>
+<div>position: absolute;</div>
+<div>top: 50%;</div>
+<div>left: 50%;</div>
+<div>-webkit-transform: translateY(-50%);</div>
+<div>transform: translateY(-50%);</div>
+<div>}</div>
+<br />
+<div>.modal-details p {</div>
+<div>text-align: left;</div>
+<div>font-weight: 700;</div>
+<div>}</div>
+<br />
+<div>.modal-details span {</div>
+<div>font-weight: 400;</div>
+<div>}</div>
+<br />
+<div>.overlay-visible {</div>
+<div>position: fixed;</div>
+<div>padding: 20px;</div>
+<div>top: 0;</div>
+<div>left: 0;</div>
+<div>width: 100%;</div>
+<div>height: 100%;</div>
+<div>background: #00000080;</div>
+<div>z-index: 999;</div>
+<div>overflow: auto;</div>
+<div>display: grid;</div>
+<div>text-align: center;</div>
+<div>}</div>
+<br />
+<div>@media all and (max-width: 1024px) {</div>
+<div>.pokemon-listli {</div>
+<div>width: 50%;</div>
+<div>}</div>
+<div>}</div>
+<br />
+<div>@media all and (max-width: 630px) {</div>
+<div>.pokemon-listli {</div>
+<div>width: 100%;</div>
+<div>}</div>
+<div>};</div>
+</div>
  
