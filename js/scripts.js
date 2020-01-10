@@ -57,10 +57,10 @@ var pokemonRepository = (() => {
   }
  
   function addListItem(pokemon) {
-    var $pokemonList = $(".pokemon-list"); // Assign the <ul class="pokemon-list"> to a variable
-    var $listItem = $("<li>"); // Create a HTML <li> element
-    var $button = $(<button type="button" class="col-md-6 text-center" data-toggle="modal" data-target="#pokemon-modal"></button>);
-    // Create a <button> element and add the pokemon's name to the button
+    var $pokemonList = $('.pokemon-list'); // Assign the <ul class="pokemon-list"> to a variable
+    var $listItem = $('<li class="col-md-6">'); // Create a HTML <li> element
+    var $button = $('<button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#pokemon-modal"></button>');
+    $button.text(pokemon.name); // Create a <button> element and add the pokemon's name to the button
     $pokemonList.append($listItem); // Append the <li> element to the <ul>
     $listItem.append($button); // Append the <button to the <li> previously appended
     $button.on('click', function (event) { // Finally, add a click event to each button
